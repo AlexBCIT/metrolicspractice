@@ -17,6 +17,7 @@
 
 html {
     color: #222;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -92,6 +93,9 @@ textarea {
     resize: vertical;
 }
 
+img {
+    width: 100%;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -107,12 +111,56 @@ section {
 
 .column {
     background-color: rgb(218, 236, 166);
+    margin: 1rem;
 }
 
 .row {
+    display: grid;
     width: 85vw;
-    max-width: 70rem;
+    min-width: 60rem;
+    max-width: 85rem;
     margin: 0 auto;
+}
+
+.col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.col-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.col-7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.col-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.col-1-2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.row-span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.sub-row {
+    display: grid;
 }
 
 
